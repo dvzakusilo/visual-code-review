@@ -1,0 +1,29 @@
+$success_color : green;
+$alert_color : yellow;
+$error_color : red;
+
+.visualcr {
+  border: 1px dotted;
+
+
+  &__success {
+    border-color: green;
+    -webkit-box-shadow: 0px 0px 10px $success_color;
+    -moz-box-shadow: 0px 0px 10px $success_color;
+    box-shadow: 0px 0px 10px $success_color;
+  }
+
+  &__alert {
+    border-color: yellow;
+    -webkit-box-shadow: 0px 0px 10px $alert_color;
+    -moz-box-shadow: 0px 0px 10px $alert_color;
+    box-shadow: 0px 0px 10px $alert_color;
+  }
+
+  &__error {
+    border-color: red;
+    -webkit-box-shadow: 0px 0px 10px $error_color;
+    -moz-box-shadow: 0px 0px 10px $error_color;
+    box-shadow: 0px 0px 10px $error_color;
+  }
+}
