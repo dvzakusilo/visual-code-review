@@ -1,6 +1,6 @@
 {
   "name": "visual-code-review",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Simple library for visual fixing of the revealed defects of imposition.",
   "main": "src/index.js",
   "scripts": {

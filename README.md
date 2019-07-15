@@ -1,7 +1,4 @@
 # visual-code-review
-<snippet>
-  <content><![CDATA[
-
 
  Simple library for visual fixing of the revealed defects of imposition.
 
@@ -90,6 +87,4 @@ For webpack:
 
 BSD-3-Clause
 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+
