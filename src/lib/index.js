@@ -1,9 +1,6 @@
 'use strict';
 import tippy from 'tippy.js'
 
-
-const $obConfig = require('../../visualcr.json');
-
 const $sBaseClass = 'visualcr';
 
 /**
@@ -13,9 +10,7 @@ const $sBaseClass = 'visualcr';
  * @constructor
  */
 export class VisualCR {
-    init() {
-
-
+    init($obConfig) {
         for (let $sLink in $obConfig) {
 
             /** @const HTMLElement $obParser Subject of the tag of the link. */
@@ -23,7 +18,7 @@ export class VisualCR {
             $obParser.href = $sLink;
 
             /** @internal If the current page is found in a config, then we receive elements which need to be allocated.  */
-            if (window.location.pathname === $obParser.pathname) {
+            if (window.location.pathname === $obParser.pathname || $sLink === '*') {
                 for (let $sAnchor in $obConfig[$sLink]) {
                     let $arElements = document.querySelectorAll($sAnchor);
                     /** @internal We add a class and tooltip to each element.  */
