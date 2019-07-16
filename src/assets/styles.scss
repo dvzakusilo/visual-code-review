@@ -6,7 +6,7 @@ $error_color: red;
   border: 1px dotted;
 
   &_button {
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     right: 0;
     background: linear-gradient(180deg,#4eb5e5 0,#389ed5);

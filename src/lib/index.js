@@ -28,8 +28,7 @@ export class VisualCR {
 
             $obParser.href = $sLink;
 
-            /** @internal If the current page is found in a config, then we receive elements which need to be allocated.  */
-            if (window.location.pathname === $obParser.pathname || $sLink === '*') {
+
 
                 /**  @internal Add info to debug tooltip.  */
                 let $obDebugTooltipContent = document.createElement('div');
@@ -53,12 +52,15 @@ export class VisualCR {
                         $obElement.classList.add($sBaseClass);
                         $obElement.classList.add($sBaseClass + '__' + $sClassName);
 
-                        // Add popup
+                        /** @internal If the current page is found in a config, then we receive elements which need to be allocated.  */
+                        if (window.location.pathname === $obParser.pathname || $sLink === '*') {
+                            // Add popup
 
-                        tippy($obElement, {
-                            content: '[' + $sClassName + '] ' +$obConfig[$sLink][$sAnchor][0],
-                            interactive: true,
-                        });
+                            tippy($obElement, {
+                                content: '[' + $sClassName + '] ' + $obConfig[$sLink][$sAnchor][0],
+                                interactive: true,
+                            });
+                        }
 
                         // Add content
                         let $obContent = document.createElement('div');
@@ -73,7 +75,7 @@ export class VisualCR {
                 // Add debug info.
                 $obDebugTooltip.appendChild($obDebugTooltipContent);
 
-            }
+
 
             tippy($obDebug, {
                 content: $obDebugTooltip,
