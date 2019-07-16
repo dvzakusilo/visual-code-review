@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/dvzakusilo/visual-code-review#readme",
   "dependencies": {
-    "tippy.js": "^4.3.4"
+    "tippy.js": "^4.3.4",
+    "webpack-cli": "^3.3.6"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",
@@ -45,7 +46,7 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
-    "webpack": "^3.12.0",
-    "webpack-dev-server": "^2.11.2"
+    "webpack": "^4.0.0",
+    "webpack-dev-server": ">=3.1.11"
   }
 }
