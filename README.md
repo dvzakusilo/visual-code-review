@@ -47,7 +47,6 @@ Simple json for example (visualcr.json):
 }
 ```
 
-
 For js:
 ```js
 document.addEventListener('DOMContentLoaded', function () {
